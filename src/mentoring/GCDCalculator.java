@@ -3,7 +3,7 @@ package mentoring;
 public class GCDCalculator {
 
     // 유클리드 호제법을 사용하여 최대 공약수를 구하는 메서드
-    public static int findGCD(int a, int b) {
+    public static int findGCD1(int a, int b) {
         while (b != 0) {
             int temp = b;
             b = a % b;
@@ -22,16 +22,18 @@ public class GCDCalculator {
     }
 
     public static void main(String[] args) {
+    	// 기본 해결 방법
         // 두 수 입력
         int num1 = 48;
         int num2 = 18;
 
         // 최대 공약수 계산
-        int gcd = findGCD(num1, num2);
+        int gcd = findGCD1(num1, num2);
 
         // 결과 출력
         System.out.println("최대 공약수: " + gcd);
         
+        // 재귀함수 사용
         // 두 수 입력
         int num3 = 924;
         int num4 = 32;
