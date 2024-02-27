@@ -1,5 +1,7 @@
 package mentoring;
 
+import java.util.Scanner;
+
 //PrimeNumber 클래스 선언
 public class PrimeNumber {
 	/*
@@ -35,8 +37,10 @@ public class PrimeNumber {
 
 	// main 메서드: 프로그램의 시작점
 	public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 		// 소수를 찾을 범위 설정
-		int n = 50;
+        System.out.print("소수 구할 숫자 : ");
+		int n = scanner.nextInt();
 
 		// 소수 찾기
 		boolean[] primes = findPrimes(n);
@@ -49,5 +53,6 @@ public class PrimeNumber {
 				System.out.print(i + " ");
 			}
 		}
+		scanner.close();
 	}
 }
