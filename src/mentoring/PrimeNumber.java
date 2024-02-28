@@ -17,7 +17,9 @@ public class PrimeNumber {
 		boolean[] isPrime = new boolean[n + 1];
 
 		// 처음에 모든 수를 소수로 가정
+		// 2부터 시작하는 이유는 소수의 의미가 1보다 큰 자연수 중 1과 자기 자신만을 약수로 가지는 수이기 때문이다.
 		for (int i = 2; i <= n; i++) {
+			// 모든 수의 배열 안에 true 값을 넣어 소수로 가정한다.
 			isPrime[i] = true;
 		}
 
