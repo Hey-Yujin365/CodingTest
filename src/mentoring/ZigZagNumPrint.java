@@ -15,7 +15,6 @@ public class ZigZagNumPrint {
         int finalNumber = scanner.nextInt();
 
         // 행 계산
-        // 
         int rows = (int) Math.ceil((double) finalNumber / numbersPerLine);
 
         // 숫자 출력
