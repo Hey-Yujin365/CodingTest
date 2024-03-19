@@ -4,12 +4,12 @@ import java.util.Scanner;
 
 public class GCDCalculator {
 
-    // 최대공약수 구하는 함수
+    // 최대공약수 구하는 기본 해결 방법
     public static int findGCD(int a, int b) {
         // 두 수 중 작은 수 찾기
         int min = Math.min(a, b);
 
-        // 최대공약수를 저장할 변수
+        // 최대공약수를 저장할 변수 선언 및 초기화
         int gcd = 1;
 
         // 작은 수부터 시작하여 최대공약수 갱신
