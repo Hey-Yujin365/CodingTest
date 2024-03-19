@@ -28,8 +28,8 @@ public class ZigZagNumPrint {
 		// 행 반복
 		for (int row = 0; row < rows; row++) {
 			// 짝수 행은 왼쪽에서 오른쪽으로 채우기
-			if (row % 2 == 0) {
-				for (int col = 0; col < numbersPerLine; col++) {
+			if (row % 2 == 0) {		// 짝수 행인지 검사
+				for (int col = 0; col < numbersPerLine; col++) {	// 왼쪽에서 오른쪽으로 열++로 한칸씩 채우기
 					matrix[row][col] = currentNumber++;
 				}
 			}
@@ -54,7 +54,8 @@ public class ZigZagNumPrint {
                     System.out.print("     ");
                 }
             }
-            System.out.println(); // 다음 라인으로 넘어가기
+            // 다음 라인으로 넘어가기
+            System.out.println();
         }
         
         // 메모리 누수 방지
