@@ -16,7 +16,7 @@ public class ZigZagNumPrint {
         int finalNumber = scanner.nextInt();
 
         // 행 계산
-        // 먼저 계산한 수에 소수점이 있어야 하기 때문에 double형으로 형변환한 뒤 마지막으로 출력할 수 / 행마다 출력할 숫자를 계산한다.
+        // 먼저 계산한 수에 소수점이 있어야 하기 때문에 double형으로 형변환한 뒤 (출력할 마지막 슛자/행마다 출력할 숫자)를 계산한다.
         // double형으로 변환해 계산한 숫자를 ceil함수로 올림 한다.(천장값을 구하는 함수다.)
         // 그렇게 나온 수를 다시 int형으로 행 수를 나타내는 rows 변수에 담는다.
         int rows = (int) Math.ceil((double) finalNumber / numbersPerLine);
